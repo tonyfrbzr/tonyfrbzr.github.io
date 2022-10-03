@@ -12,7 +12,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-       - name: TOML linter
+      - name: TOML linter
        uses: yisonPylkita/gh-action-toml-linter@0.1.3
 
       - uses: actions/checkout@v3
