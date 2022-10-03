@@ -12,9 +12,6 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: TOML linter
-       uses: yisonPylkita/gh-action-toml-linter@0.1.3
-
       - uses: actions/checkout@v3
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
